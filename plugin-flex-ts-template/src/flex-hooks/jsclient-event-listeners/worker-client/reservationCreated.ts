@@ -2,9 +2,9 @@ import * as Flex from '@twilio/flex-ui';
 import { Reservation } from '../../../types/task-router';
 
 export default (flex: typeof Flex, manager: Flex.Manager) => {
-  (manager.workerClient).on('reservationCreated', (reservation: Reservation) => {
+  //(manager.workerClient).on('reservationCreated', (reservation: Reservation) => {
     //autoAcceptVoiceTask(flex, manager, reservation);
-  });
+  //});
 }
 
 function autoAcceptVoiceTask(flex: typeof Flex, manager: Flex.Manager, reservation: Reservation) {

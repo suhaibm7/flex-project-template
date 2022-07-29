@@ -1,5 +1,4 @@
 import * as Flex from '@twilio/flex-ui';
-import {removeChannelSidAndLeaveChatForChatTransfer, announceOnChannelWhenLeaving } from '../../feature-library/chat-transfer/flex-hooks/actions/WrapupTask'
 
 export interface EventPayload {
   task?: Flex.ITask;
@@ -16,8 +15,7 @@ export default (flex: typeof Flex, manager: Flex.Manager) => {
 }
 
 function beforeWrapupTask(flex: typeof Flex, manager: Flex.Manager) {
-  removeChannelSidAndLeaveChatForChatTransfer(flex, manager);
-  announceOnChannelWhenLeaving(flex, manager);
+
 }
 
 // Avoid using replace hook if possible
